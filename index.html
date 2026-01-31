@@ -22,16 +22,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="#banner">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Etapas</a>
+                            <a class="nav-link active" href="#steps">Etapas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Menu 3</a>
+                            <a class="nav-link active" href="#benefits">Benefícios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Menu 4</a>
+                            <a class="nav-link active" href="#faq">Dúvidas</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -39,16 +39,15 @@
                                 Serviços
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#plans">Planos</a></li>
+                                <li><a class="dropdown-item" href="#projects">Projetos</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-primary" href="#">Contato</a>
+                            <a class="btn btn-primary" href="#contact">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -361,33 +360,91 @@
                     <img src="./assets/project-1.png" alt="projeto 1" class="d-block project-img" />
                     <p class="text-light border-bottom mt-3 pb-1">projeto 1 para empresa X</p>
                 </div>
-                 <div
+                <div
                     class="col-sm-12 col-lg-4 d-flex flex-column justify-content-center align-items-center text-center my-4">
                     <img src="./assets/project-2.png" alt="projeto 2" class="d-block project-img" />
                     <p class="text-light border-bottom mt-3 pb-1">projeto 2 para empresa X</p>
                 </div>
-                 <div
+                <div
                     class="col-sm-12 col-lg-4 d-flex flex-column justify-content-center align-items-center text-center my-4">
                     <img src="./assets/project-3.png" alt="projeto 3" class="d-block project-img" />
                     <p class="text-light border-bottom mt-3 pb-1">projeto 3 para empresa X</p>
                 </div>
-                 <div
+                <div
                     class="col-sm-12 col-lg-4 d-flex flex-column justify-content-center align-items-center text-center my-4">
                     <img src="./assets/project-1.png" alt="projeto 1" class="d-block project-img" />
                     <p class="text-light border-bottom mt-3 pb-1">projeto 1 para empresa X</p>
                 </div>
-                 <div
+                <div
                     class="col-sm-12 col-lg-4 d-flex flex-column justify-content-center align-items-center text-center my-4">
                     <img src="./assets/project-1.png" alt="projeto 1" class="d-block project-img" />
                     <p class="text-light border-bottom mt-3 pb-1">projeto 1 para empresa X</p>
                 </div>
-                 <div
+                <div
                     class="col-sm-12 col-lg-4 d-flex flex-column justify-content-center align-items-center text-center my-4">
                     <img src="./assets/project-1.png" alt="projeto 1" class="d-block project-img" />
                     <p class="text-light border-bottom mt-3 pb-1">projeto 1 para empresa X</p>
                 </div>
             </div>
 
+    </section>
+    <section id="contact" class="my-4">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center text-primary">Entre em contato</h1>
+                <h2 class="text-center fs-4 text-secondary">Deixe sua mensagem e tomaremos um café (virtual).</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form class="g-3 row">
+                        <div class="col-md-4">
+                            <label class="form-label">Nome</label>
+                            <input type="text" class="form-control" placeholder="Insira seu nome" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Insira seu email" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Instagram </label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" placeholder="Insira seu instagram"
+                                    aria-label="Instagram" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Ramo do seu negócio</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Plano de interesse</label>
+                            <select class="form-select" required>
+                                <option selected disabled>Escolha o seu plano</option>
+                                <option selected disabled>Plano platinum</option>
+                                <option selected disabled>Plano gold</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Qual porte da sua empresa ?</label>
+                            <select class="form-select" required>
+                                <option selected disabled>Peqeuena empresa</option>
+                                <option selected disabled>Média empresa</option>
+                                <option selected disabled>Muktinacional</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 d-flex justify-content-between my-4 flex-column flex-md-row">
+                    <p><span class="fw-bold me-2">Endereço:</span> Rua X, Número X, Cidade x</p>
+                    <p><span class="fw-bold me-2">Telefone:</span> (XX) XXXX-XXXX</p>
+                    <p><span class="fw-bold me-2">Email:</span> nicolas.alves.dev10@gmail.com</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
