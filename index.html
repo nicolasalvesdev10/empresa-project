@@ -11,6 +11,63 @@
 <body>
 
     <header>
+        <div class="modal fade" id="orcamentoModal" tabindex="-1" aria-labelledby="orcamentoModallabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="orcamentoModallabel">Solicitar orçamento</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="g-3 row">
+                        <div class="col-12">
+                            <label class="form-label">Nome</label>
+                            <input type="text" class="form-control" placeholder="Insira seu nome" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Insira seu email" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Instagram </label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" placeholder="Insira seu instagram"
+                                    aria-label="Instagram" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Ramo do seu negócio</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Plano de interesse</label>
+                            <select class="form-select" required>
+                                <option selected disabled>Escolha o seu plano</option>
+                                <option selected>Plano platinum</option>
+                                <option selected>Plano gold</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Qual porte da sua empresa ?</label>
+                            <select class="form-select" required>
+                                <option selected disabled>Peqeuena empresa</option>
+                                <option selected>Média empresa</option>
+                                <option selected>Multinacional</option>
+                            </select>
+                        </div>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal-->
+
         <nav class="navbar navbar-expand-lg bg-dark py-4" data-bs-theme="dark">
             <div class="container-fluid">
                 <img src="./assets/N.jpg" alt="logo" width="70px" />
@@ -30,24 +87,29 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="#benefits">Benefícios</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#faq">Dúvidas</a>
-                        </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Serviços
+                                Planos
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#plans">Planos</a></li>
-                                <li><a class="dropdown-item" href="#projects">Projetos</a></li>
+                                <li><a class="dropdown-item" href="#plans">Plano platinum</a></li>
+                                <li><a class="dropdown-item" href="#plans">Plano gold</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-primary" href="#contact">Contato</a>
+                            <a class="nav-link active" href="#projects">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#faq">Dúvidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orcamentoModal">Solicitar
+                                orçamento</a>
                         </li>
                     </ul>
                 </div>
@@ -58,7 +120,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center">
-                    <h1 class="fw-bold">A melhor solução para sua empresa</h1>
+                    <h1 class="fw-bold mt-3">A melhor solução para sua empresa</h1>
                     <p>Nosso time desenvolverá a melhor solução que você precisa para fazer o seu negócio evoluir</p>
                     <button type="button" class="btn btn-primary"> Conheça mais</button>
                 </div>
@@ -421,16 +483,16 @@
                             <label class="form-label">Plano de interesse</label>
                             <select class="form-select" required>
                                 <option selected disabled>Escolha o seu plano</option>
-                                <option selected disabled>Plano platinum</option>
-                                <option selected disabled>Plano gold</option>
+                                <option selected>Plano platinum</option>
+                                <option selected>Plano gold</option>
                             </select>
                         </div>
                         <div class="col-md-3">
                             <label class="form-label">Qual porte da sua empresa ?</label>
                             <select class="form-select" required>
                                 <option selected disabled>Peqeuena empresa</option>
-                                <option selected disabled>Média empresa</option>
-                                <option selected disabled>Muktinacional</option>
+                                <option selected>Média empresa</option>
+                                <option selected>Multinacional</option>
                             </select>
                         </div>
                         <div class="col-12 mt-4">
@@ -446,6 +508,21 @@
             </div>
         </div>
     </section>
+
+    <footer class="bg-dark py-4 mt-4" data-bs-theme="dark">
+        <div class="container">
+            <nav>
+                <ul class="d-flex justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href=#banner class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href=#steps class="nav-link px-2 text-body-secondary">Etapas</a></li>
+                    <li class="nav-item"><a href=#benefits class="nav-link px-2 text-body-secondary">Benefícios</a></li>
+                    <li class="nav-item"><a href=#faq class="nav-link px-2 text-body-secondary">Dúvidas</a></li>
+                </ul>
+            </nav>
+            <p class="text-center text-body-secondary">&copy; 2026, Nicolas Alves</p>
+        </div>
+
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
